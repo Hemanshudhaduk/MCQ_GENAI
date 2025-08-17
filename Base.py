@@ -2,7 +2,7 @@ import os
 import json
 import pandas as pd
 import traceback
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
@@ -11,8 +11,9 @@ import PyPDF2
 import streamlit as st
 import re
 
-load_dotenv()
-KEY = os.getenv("GROQ_API_KEY")
+# load_dotenv()
+# KEY = os.getenv("GROQ_API_KEY")
+KEY = st.secrets["GROQ_API_KEY"]
 
 # Using a more reliable model
 llm = ChatGroq(
