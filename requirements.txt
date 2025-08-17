@@ -1,7 +1,9 @@
 streamlit
-reportlab
-python-dotenv
+pandas
 langchain
 langchain-groq
+langchain-community
+reportlab
+python-dotenv
+PyPDF2
 openai
-pandas
